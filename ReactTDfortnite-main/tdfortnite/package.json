@@ -1,0 +1,47 @@
+{
+  "name": "tdfortnite",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8000",
+  "main": "server/authorization.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "pg": "^8.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.1",
+    "ws": "^7.4.4",
+    "react-device-detect": "^1.17.0"
+  },
+  "scripts": {
+    "client": "react-scripts start",
+    "server": "nodejs server/ftd.js",
+    "start": "\"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

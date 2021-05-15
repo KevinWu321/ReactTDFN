@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "pixelboy";
+    src: url("assets/Pixeboy-z8XGD.ttf");
+    font-weight: bold;
+  }
+* {
+    font-family: "pixelboy";
+}
+
+body {
+    background-image: url("assets/background.png");
+}
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+}
+
+
+
+canvas {
+    background: white;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+

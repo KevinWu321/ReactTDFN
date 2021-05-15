@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta HTTP-EQUIV="EXPIRES" CONTENT="-1">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script language="javascript" src="model.js" > </script>
+		<script language="javascript" src="controller.js" > </script>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+
+		<style>
+			#ui_login { display:block; }
+			#ui_play { display:none; }
+		</style>
+		<title>f0rt9it32d</title>
+	</head>
+	<body bgcolor="ffffff">
+		<h1>f0rt9it32d</h1>
+		<div id="error_msg"></div>
+		<div id="ui_login">
+			<div>
+				<input type="text" id="username" placeholder="User Name" />
+				<input type="password" id="password" placeholder="Password" />
+				<input type="submit" id="loginSubmit" value="Login">
+				<input type="submit" id="registerSubmit" value="Register">
+			</div>
+		</div>
+		<div id="ui_register">
+			<table>
+				<div>
+					<label>Enter Username</label>
+					<input type="text" id="username1" placeholder="User Name" />
+				</div>
+				<div>
+					<label>Enter Password</label>
+					<input type="text" id="password1" placeholder="Password" />
+				</div>
+				<div>
+					<label>Confirm Password</label>
+					<input type="text" id="password2" placeholder="Password" />
+				</div>
+				<div>
+					<input type="submit" id="register" value="Register">
+				</div>
+			</table>
+		</div>
+		<div id="ui_play">
+			<center>
+				<canvas id="stage" width="800" height="800" style="border:1px solid black;"> </canvas>
+			</center>
+		</div>
+		<div id="ui_pause_menu">
+			<div>
+				<input type="submit" id="resume" value="Resume">
+				<input type="submit" id="quit" value="Quit">
+			</div>
+		</div>
+		<div id="ui_main_menu">
+			<div>
+				<input type="submit" id="start" value="Start">
+				<input type="submit" id="leaderboard" value="LeaderBoard">
+				<input type="submit" id="profile" value="Profile">
+			</div>
+		</div>
+        <div id="ui_profile">
+            <table>
+                <div>
+                    <label>Username:</label>
+                    <label id="profileUser">abc</label>
+                </div>
+                <div>
+                    <label>Enter Password</label>
+                    <input type="text" id="password3" placeholder="Password" />
+                </div>
+                <div>
+                    <label>New Password</label>
+                    <input type="text" id="password4" placeholder="Password" />
+                </div>
+                <div>
+                    <label>Confirm New Password</label>
+                    <input type="text" id="password5" placeholder="Password" />
+                </div>
+                <div>
+                    <input type="submit" id="changePassword" value="Change Password">
+                    <input type="submit" id="mainMenu" value="Main Menu">
+                </div>
+            </table>
+        </div>
+		<div id="ui_difficulty_menu">
+			<div>
+				<input type="submit" id="difficulty" value="hard" onclick="selectDifficulty(this.value)">
+				<input type="submit" id="difficulty" value="medium" onclick="selectDifficulty(this.value)">
+				<input type="submit" id="difficulty" value="easy" onclick="selectDifficulty(this.value)">
+				<input type="submit" id="backDiff" value="Back">
+			</div>
+		</div>
+		<div id="ui_leaderboard">
+			<div>
+				<h2>HARD LeaderBoard</h2>
+				<table id="hardTable"></table>
+				<h2>MEDIUM LeaderBoard</h2>
+				<table id="mediumTable"></table>
+				<h2>EASY LeaderBoard</h2>
+				<table id="easyTable"></table>
+				<input type="submit" id="back" value="Back">
+			</div>
+		</div>
+		<div id="ui_result">
+			<div id="results"></div>
+			<div id="score"></div>
+			<input type="submit" id="restart" value="Restart">
+		</div>
+	</body>
+</html>

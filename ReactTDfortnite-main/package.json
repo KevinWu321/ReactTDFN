@@ -1,0 +1,25 @@
+{
+  "name": "ftdmain",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"cd tdfortnite && npm run client\" \"cd server && nodejs ftd.js\"",
+    "postinstall": "concurrently \"cd tdfortnite && npm install\" \"cd server && npm install\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunny-DB-Ng/ReactTDfortnite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sunny-DB-Ng/ReactTDfortnite/issues"
+  },
+  "homepage": "https://github.com/Sunny-DB-Ng/ReactTDfortnite#readme"
+}
